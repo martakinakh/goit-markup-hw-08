@@ -1,19 +1,19 @@
-/* ------------------------ TEAM ------------------------- */
+// /* ------------------------ TEAM ------------------------- */
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: var(--bgc-third-color);
 }
 
 .team__caption {
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -21,7 +21,7 @@
 }
 
 .team__list {
-  display: flex;
+  //   display: flex;
 
   padding-left: 0px;
   margin-top: 0px;
@@ -37,7 +37,7 @@
 }
 
 .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team__img {
@@ -73,7 +73,7 @@
   justify-content: center;
 
   padding-left: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .team__social-item:not(:last-child) {

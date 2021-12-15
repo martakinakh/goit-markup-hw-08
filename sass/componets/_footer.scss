@@ -1,6 +1,7 @@
-/* ------------------- FOOTER ------------------- */
+// /* ------------------- FOOTER ------------------- */
 
 .footer {
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -8,26 +9,27 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  //   display: flex;
+  //   align-items: baseline;
 
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
-  width: 1200px;
+  //   width: 1200px;
 }
 
 .footer__logo {
   display: inline-block;
+  //
 
   margin-bottom: 20px;
 
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
@@ -44,7 +46,7 @@
 }
 
 .footer__adress-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer__link-adress {
@@ -80,10 +82,11 @@
   }
 }
 
-/* --------------------- JOIN ----------------- */
+// /* --------------------- JOIN ----------------- */
 
 .join {
-  margin-left: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .join__title {
@@ -92,7 +95,7 @@
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -101,6 +104,7 @@
 
 .join__list {
   display: flex;
+  justify-content: center;
 
   margin-top: 0px;
   margin-bottom: 0px;
@@ -137,11 +141,11 @@
   fill: #ffffff;
 }
 
-/* ------------------ SUBSCRIBE ------------------ */
+// /* ------------------ SUBSCRIBE ------------------ */
 
-.subscribe {
-  margin-left: 93px;
-}
+// .subscribe {
+//   margin-left: 93px;
+// }
 
 .subscribe__title {
   margin: 0px;
@@ -156,15 +160,15 @@
   color: var(--second-title-color);
 }
 
-.subscribe__form {
-  display: flex;
-}
+// .subscribe__form {
+//   display: flex;
+// }
 
 .subscribe__input {
   padding-left: 16px;
-  margin-right: 12px;
-
-  width: 358px;
+  //   margin-right: 12px;
+  margin-bottom: 20px;
+  width: 450px;
   height: 50px;
 
   color: #ffffff;
@@ -192,6 +196,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 
   padding: 0;
 

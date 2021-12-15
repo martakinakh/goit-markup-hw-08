@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
 
@@ -22,39 +22,58 @@
 <header class="header">
 
     <div class="header__container">
-
-        <a href="" class="logo">Web<span class="logo__name">Studio</span></a>
-        
         <nav class="header-nav">
-            <ul class="header-nav__list">
+            <a href="" class="logo">Web<span class="logo__name">Studio</span></a>
+        </nav>
+
+            <button type="button" class="menu-toggle js-open-menu icon-menu" aria-expanded="false"
+                aria-label="mobil-menu">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-header-menu"></use>
+                </svg>
+            </button>
+            
+
+        <div class="menu-container js-menu-container" id="mobil-menu">
+            <button type="button" class="menu-toggle js-close-menu icon-menu-close">
+            <svg width="40" height="40" >
+                <use href="./images/icons.svg#icon-header-close"></use>
+            </svg>
+            </button>
+            <ul class="mobile-menu header-nav__list">
                 <li class="header-nav__item"><a href="" class="header-nav__link header-nav__link--current">Студия</a></li>
                 <li class="header-nav__item"><a href="portfolio.html" class="header-nav__link">Портфолио</a></li>
                 <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
             </ul>
-        </nav>
-
-        <ul class="header-contact">
-            <li class="header-contact__item">
-                <a href="mailto:info@devstudio.com" class="header-contact__link"> 
-                    <svg class="header-contact__icon" width="16" height="12"> 
-                        <use href="./images/icons.svg#icon-mail-icon">
-                        </use> 
-                    </svg> info@devstudio.com
-                </a>
-            </li>
-            <li class="header-contact__item">
-                <a href="tel:+380961111111" class="header-contact__link">
-                    <svg class="header-contact__icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-phone-icon">
-                        </use>
-                    </svg> +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
-
+           
+                <ul class="header-contact">
+                    <li class="header-contact__item">
+                        <a href="mailto:info@devstudio.com" class="header-contact__link">
+                            <svg class="header-contact__icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-mail-icon">
+                                </use>
+                            </svg> info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="header-contact__item">
+                        <a href="tel:+380961111111" class="header-contact__link">
+                            <svg class="header-contact__icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon-phone-icon">
+                                </use>
+                            </svg> +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>   
+        </div>
     </div>
-
 </header>
+        
+
+       
+
+   
+
+
 
 
 <!-- HERO -->
@@ -69,7 +88,7 @@
 
     <!-- MODAL -->
 
-   <div class="backdrop is-hidden" data-modal>
+   <!-- <div class="backdrop is-hidden" data-modal>
 
     <div class="modal">
                                     
@@ -138,7 +157,7 @@
 
         </div>
 
-    </div>
+    </div> -->
 
     </section>
 
@@ -209,7 +228,7 @@
 
     <section class="work">
 
-        <div class="container">
+        <!-- <div class="container">
 
             <h2 class="work__title">Чем мы занимаемся</h2>
 
@@ -246,7 +265,7 @@
 
             </ul>
 
-        </div>
+        </div> -->
 
     </section>
 
@@ -589,6 +608,10 @@
     
 
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 
 </body>
 </html>

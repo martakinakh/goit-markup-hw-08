@@ -1,4 +1,4 @@
-/* ------------------ HEADER ------------------ */
+// /* ------------------ HEADER ------------------ */
 
 .header {
   background-color: var(--bgc-main-color);
@@ -9,10 +9,12 @@
   display: flex;
   align-items: center;
 
-  width: 1200px;
+  //   max-width: 1200px;
 
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -20,12 +22,12 @@
 .logo {
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-right: 93px;
+  //   margin-right: 93px;
 
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
@@ -35,31 +37,75 @@
   color: var(--second-logo-color);
 }
 
-/* ------------------ HEADER-NAV ------------------ */
-
-.header-nav__list {
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
   display: flex;
-
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
-.header-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 767px) {
+  .menu-toggle {
+    display: none;
+  }
 }
+
+.icon-menu {
+  margin: 0px;
+  margin-left: auto;
+}
+
+.icon-menu-close {
+  margin-left: auto;
+}
+
+.menu-container {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+
+// /* ------------------ HEADER-NAV ------------------ */
+
+// .header-nav__item:not(:last-child) {
+//   margin-right: 50px;
+// }
 
 .header-nav__link {
-  position: relative;
+  //   position: relative;
 
-  display: block;
+  //   display: block;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   color: var(--main-title-color);
@@ -72,63 +118,63 @@
   }
 }
 
-.header-nav__link--current {
-  color: var(--accent-color);
-}
+// .header-nav__link--current {
+//   color: var(--accent-color);
+// }
 
-.header-nav__link--current::after {
-  position: absolute;
+// .header-nav__link--current::after {
+//   position: absolute;
 
-  left: 0px;
-  bottom: -1px;
+//   left: 0px;
+//   bottom: -1px;
 
-  width: 100%;
-  height: 4px;
+//   width: 100%;
+//   height: 4px;
 
-  content: "";
+//   content: "";
 
-  background: var(--accent-color);
-  border-radius: 2px;
-}
+//   background: var(--accent-color);
+//   border-radius: 2px;
+// }
 
-/* --------------- HEADER-CONTACT -------------- */
+// /* --------------- HEADER-CONTACT -------------- */
 
-.header-contact {
-  display: flex;
+// .header-contact {
+//   display: flex;
 
-  margin-left: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-}
+//   margin-left: auto;
+//   margin-top: 0px;
+//   margin-bottom: 0px;
+//   padding-left: 0px;
+// }
 
-.header-contact__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .header-contact__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
-.header-contact__link {
-  display: flex;
-  align-items: center;
+// .header-contact__link {
+//   display: flex;
+//   align-items: center;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+// font-weight: 500;
+// font-size: 14px;
+// line-height: 1.14;
+// letter-spacing: 0.02em;
 
-  color: var(--second-text-color);
+// color: var(--second-text-color);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
 
-.header-contact__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
+// .header-contact__icon {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
