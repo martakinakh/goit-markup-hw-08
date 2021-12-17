@@ -225,13 +225,16 @@
   border-radius: 4px;
   outline: none;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 12px;
-    width: 358px;
   }
 
   @media screen and (min-width: 480px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 

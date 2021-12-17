@@ -854,16 +854,21 @@ img {
   outline: none;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .subscribe__input {
     margin-right: 12px;
-    width: 358px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .subscribe__input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
   }
 }
 
