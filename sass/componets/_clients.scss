@@ -64,6 +64,12 @@
   }
 }
 
+.clients__item:not(:last-child) {
+  @media screen and (max-width: 479px) {
+    margin-bottom: 30px;
+  }
+}
+
 .clients__link {
   display: flex;
   justify-content: center;
