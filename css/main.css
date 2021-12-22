@@ -352,15 +352,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 479px) {
-  .header-contact__tel {
-    font-size: 28px;
-    line-height: 1.17;
-    color: #2196f3;
-    margin-bottom: 32px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .header-contact__tel {
     font-size: 34px;
@@ -376,6 +367,15 @@ img {
     font-size: 12px;
     line-height: 1.16;
     color: #757575;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-contact__tel {
+    font-size: 28px;
+    line-height: 1.17;
+    color: #2196f3;
+    margin-bottom: 32px;
   }
 }
 

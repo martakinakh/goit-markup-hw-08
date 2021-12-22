@@ -272,13 +272,6 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  @media screen and (max-width: 479px) {
-    font-size: 28px;
-    line-height: 1.17;
-    color: #2196f3;
-    margin-bottom: 32px;
-  }
-
   @media screen and (min-width: 480px) {
     font-size: 34px;
     line-height: 1.17;
@@ -291,6 +284,13 @@
     font-size: 12px;
     line-height: 1.16;
     color: #757575;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+    line-height: 1.17;
+    color: #2196f3;
+    margin-bottom: 32px;
   }
 
   @media screen and (min-width: 1200px) {
