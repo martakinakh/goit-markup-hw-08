@@ -1031,6 +1031,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .team__caption {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -1177,6 +1178,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .clients__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
