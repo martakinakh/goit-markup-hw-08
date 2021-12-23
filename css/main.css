@@ -1565,17 +1565,12 @@ textarea {
   padding: 0px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.5px) {
-  .portfolio__list {
-    margin-top: -15px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .portfolio__list {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    margin-top: -15px;
   }
 }
 
@@ -1589,8 +1584,6 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .portfolio__list {
-    display: flex;
-    justify-content: center;
     margin-bottom: 50px;
   }
 }
@@ -1608,14 +1601,9 @@ textarea {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .portfolio__item {
     margin-bottom: 15px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .portfolio__item {
     margin-top: 15px;
   }
 }
