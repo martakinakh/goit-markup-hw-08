@@ -1571,7 +1571,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .portfolio__list {
     display: flex;
     flex-wrap: wrap;
